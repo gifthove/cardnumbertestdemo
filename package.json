@@ -1,0 +1,32 @@
+{
+  "name": "cardnumbertestdemo",
+  "version": "1.0.0",
+  "description": "A demo to show testing using nock",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter progress  testSetup.js \"Services/*test.js\""
+  },
+  "author": "Gift Hove",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "eslint": "^5.15.3",
+    "eslint-loader": "^2.1.2",
+    "eslint-watch": "^5.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "mocha": "^6.0.2",
+    "nock": "^10.0.6"
+  }
+}
