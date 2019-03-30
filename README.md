@@ -1,6 +1,6 @@
 # cardnumbertestdemo
 
-This project contains a JavaScript service class and its test to demonstrate using nockjs in unit tests.
+This project contains a JavaScript service class and its test to demonstrate using nockjs in unit tests. This can work as a template to get started.
 
 ## Get Started
 
