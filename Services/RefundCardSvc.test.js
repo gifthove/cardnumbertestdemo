@@ -11,6 +11,11 @@ describe("Testing RefundCardSvc API with a mocked backend", function() {
     svc = new RefundCardSvc();
     svc.Url = "http://localhost:4247/api/Refund/";
     cardNumber = "0864566536090";
+  });
+
+  it("Posts and returns the CardNumber Posted", done => {
+    // Arrange
+    //setting up the expected response
     response = {
       result: {
         cards: [
@@ -20,10 +25,7 @@ describe("Testing RefundCardSvc API with a mocked backend", function() {
         ]
       }
     };
-  });
 
-  it("Posts and returns the CardNumber Posted", done => {
-    // Arrange
     //Mock the call by hijacking the call using nock
     nock("http://localhost:4247/api/Refund/")
       .post("/", { CardNumber: cardNumber })
